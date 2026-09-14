@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thursday Page Turners</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>📖 Thursday Page Turners</h1>
+    <p class="tagline">A book club for people who love turning pages</p>
+  </header>
+
+  <main>
+    <!-- This Month's Book -->
+    <section id="this-months-book" class="card">
+      <h2>📚 This Month's Book</h2>
+      <div class="book-display">
+        <div class="book-cover">
+          <span class="cover-emoji">📘</span>
+        </div>
+        <div class="book-details">
+          <h3 class="book-title">The House in the Cerulean Sea</h3>
+          <p class="book-author">by TJ Klune</p>
+          <p class="book-description">
+            A magical, heartwarming story about finding family in the most unexpected places.
+            Linus Baker, a lonely caseworker, is sent to evaluate a dangerous orphanage of
+            magical children — and discovers far more than he bargained for.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Next Meeting -->
+    <section id="next-meeting" class="card">
+      <h2>🗓️ Next Meeting</h2>
+      <div class="meeting-info">
+        <p class="meeting-date"><strong>Date:</strong> Thursday, May 29, 2025</p>
+        <p class="meeting-time"><strong>Time:</strong> 7:00 PM – 8:30 PM</p>
+        <p class="meeting-location"><strong>Location:</strong> The Cozy Nook Cafe, 123 Elm Street</p>
+        <p class="meeting-note">Bring your thoughts on the book and a friend! Coffee &amp; tea provided.</p>
+      </div>
+    </section>
+
+    <!-- Leave a Note -->
+    <section id="leave-a-note" class="card">
+      <h2>✏️ Leave a Note</h2>
+      <form id="note-form">
+        <div class="form-group">
+          <label for="note-name">Your Name</label>
+          <input type="text" id="note-name" name="name" placeholder="e.g. Jane Austen" required>
+        </div>
+        <div class="form-group">
+          <label for="note-message">Your Note</label>
+          <textarea id="note-message" name="message" rows="4" placeholder="Share your thoughts on this month's book..." required></textarea>
+        </div>
+        <button type="submit" class="btn">Post Note</button>
+      </form>
+      <div id="notes-list">
+        <h3>💬 Club Notes</h3>
+        <ul id="notes-container">
+          <li class="note-item">
+            <span class="note-author">Alice</span>
+            <p class="note-text">So excited for this month's pick! I've heard amazing things.</p>
+          </li>
+          <li class="note-item">
+            <span class="note-author">Bob</span>
+            <p class="note-text">Already halfway through — can't put it down!</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Thursday Page Turners. Made with 💜 for book lovers.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

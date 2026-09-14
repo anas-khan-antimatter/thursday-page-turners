@@ -1,0 +1,245 @@
+/* ── Reset & Base ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  background: #faf5ef;
+  color: #2c2c2c;
+  line-height: 1.6;
+  padding: 1rem;
+  min-height: 100vh;
+}
+
+/* ── Header ── */
+header {
+  text-align: center;
+  padding: 2rem 1rem 1.5rem;
+}
+
+header h1 {
+  font-size: 1.75rem;
+  color: #4a2c2a;
+  margin-bottom: 0.25rem;
+}
+
+.tagline {
+  font-size: 0.95rem;
+  color: #7a5a58;
+  font-style: italic;
+}
+
+/* ── Cards ── */
+.card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.card h2 {
+  font-size: 1.25rem;
+  color: #4a2c2a;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #f0e6dc;
+  padding-bottom: 0.5rem;
+}
+
+/* ── Book Display ── */
+.book-display {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+
+.book-cover {
+  flex-shrink: 0;
+  width: 100px;
+  height: 150px;
+  background: #e8dccc;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cover-emoji {
+  font-size: 3rem;
+}
+
+.book-details {
+  flex: 1;
+  min-width: 0;
+}
+
+.book-title {
+  font-size: 1.15rem;
+  color: #3a2a28;
+  margin-bottom: 0.2rem;
+}
+
+.book-author {
+  font-size: 0.9rem;
+  color: #7a5a58;
+  margin-bottom: 0.5rem;
+}
+
+.book-description {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* ── Meeting Info ── */
+.meeting-info p {
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+}
+
+.meeting-note {
+  margin-top: 0.75rem;
+  font-style: italic;
+  color: #7a5a58;
+  font-size: 0.9rem;
+}
+
+/* ── Form ── */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #4a2c2a;
+  margin-bottom: 0.3rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  border: 1.5px solid #ddd;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  background: #fcfaf8;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #b88a7a;
+  background: #fff;
+}
+
+.btn {
+  display: inline-block;
+  background: #8b5e4c;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  width: 100%;
+}
+
+.btn:hover {
+  background: #6f4a3a;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+/* ── Notes List ── */
+#notes-list {
+  margin-top: 1.5rem;
+}
+
+#notes-list h3 {
+  font-size: 1rem;
+  color: #4a2c2a;
+  margin-bottom: 0.75rem;
+}
+
+#notes-container {
+  list-style: none;
+}
+
+.note-item {
+  background: #f8f2ec;
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.6rem;
+}
+
+.note-author {
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: #6f4a3a;
+  display: block;
+  margin-bottom: 0.15rem;
+}
+
+.note-text {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+/* ── Footer ── */
+footer {
+  text-align: center;
+  padding: 1.5rem 0 0.5rem;
+  font-size: 0.85rem;
+  color: #999;
+}
+
+/* ── Responsive ── */
+@media (max-width: 480px) {
+  body {
+    padding: 0.75rem;
+  }
+
+  .card {
+    padding: 1.25rem;
+  }
+
+  .book-display {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .book-cover {
+    width: 120px;
+    height: 180px;
+  }
+
+  header h1 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .btn {
+    width: auto;
+  }
+}
